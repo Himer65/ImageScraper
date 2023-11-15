@@ -1,8 +1,8 @@
 function start(className = "undefined",
-               IntervalParse = 1000) {
+               intervalParse = 1000) {
     box[className] = new Set();
     Name = className;
-    parseID = setInterval(parse, IntervalParse);
+    parseID = setInterval(parse, intervalParse);
     console.log("Parser started");
 };
 

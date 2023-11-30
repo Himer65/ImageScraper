@@ -13,8 +13,10 @@ def save_images(links: tuple,
         except: continue
         path = str(len(os.listdir(path_save_folder))) + ".png"
         path = os.path.join(path_save_folder, path)
-        img.save(path)
-        num += 1
+        try:
+            img.save(path)
+            num += 1
+        except: continue
 
     return num
 
